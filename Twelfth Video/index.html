@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Block1</div>
+    <div>Block2</div>
+
+    <span>Inline1</span>
+    <span>Inline2</span>
+
+    <div class="box">first</div>
+
+    <div class="parent">
+      parent
+      <div class="child">child</div>
+    </div>
+
+    <div class="fixed">fixed</div>
+
+    <style>
+      div {
+        display: inline-block;
+        width: 100%;
+      }
+      span {
+        display: none;
+      }
+      .box {
+        position: relative;
+        left: 100px;
+      }
+      .parent {
+        position: relative;
+      }
+
+      .child {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </body>
+</html>
