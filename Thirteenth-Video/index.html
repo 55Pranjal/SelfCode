@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+    </div>
+
+    <style>
+      .parent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+      }
+
+      .child:nth-child(1) {
+        order: 3;
+      }
+
+      .child {
+        flex: 1;
+      }
+    </style>
+  </body>
+</html>
