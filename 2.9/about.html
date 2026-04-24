@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a><a class="a-tag" href="about.html">About</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Pranjal Agarwal</h1>
+      <h3>Web Developer</h3>
+
+      <p>Education:</p>
+      <p>Achievements:</p>
+
+      <section>
+        <div>
+          <h2>Project-1</h2>
+          <p>Description of Project-1</p>
+        </div>
+        <div>
+          <h2>Project-2</h2>
+          <p>Description of Project-1</p>
+        </div>
+        <div>
+          <h2>Project-3</h2>
+          <p>Description of Project-1</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>Copyright</footer>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      header a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .a-tag {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      main {
+        padding: 20px;
+        height: 400px;
+        text-align: center;
+      }
+
+      section div {
+        height: 100px;
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      section {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        height: 500px;
+        font-size: xx-large;
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        header nav {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .a-tag {
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 2px;
+          margin-bottom: 2px;
+        }
+
+        section {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </body>
+</html>
