@@ -1,14 +1,13 @@
 let title = document.querySelector("h1");
-let button = document.querySelector("button");
+let btn = document.querySelector("button");
 
-button.addEventListener("click", () => {
+btn.addEventListener("click", () => {
   fetch("https://jsonplaceholder.typicode.com/posts/1")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      title.innerText = data.title;
     })
-    .then((data) => {
-      title.innerText = data.id;
-    })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err);
+    });
 });
